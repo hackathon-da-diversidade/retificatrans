@@ -1,58 +1,132 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </head>
+    
+<head>
+        <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
 <body>
     <div id="pagInicial">
 
     </div>
     <div id="documentos">
-<div class="titulo-amiguinho"> Documentos Necessários</div>
 
-        <div class="js-doc">
-            <span class="marcador"></span>
-            <h1 class="doc-titulo">Documentos Originais</h1>
-            <div class="doc-info">
-                <ul>
-                    <li>
-                    Certid&atilde;o de nascimento (original) ou Certid&atilde;o de casamento
-                    (original)
-                </li>
-                <li>
-                    Comprovante de resid&ecirc;ncia (original) (em seu nome ou em
-                    nome dos seus pais ou marido/esposa (se casado no registro
-                    civil)
-                </li>
-                </ul>
-                    <span class="doc-obs">Caso só tenha comprovante de residência em nome de outra
-                    pessoa, você também deve levar uma declaração de moradia.
-                    A seguir você poderá ver o modelo de uma.
-                </span>
-            </div>
 
-        </div>
-        <div class="js-doc">
-                <span class="marcador"></span>
-                <h1 class="doc-titulo">Cópias Necessárias de Documentos</h1>
-                <div class="doc-info">
-                    <ul>
-                        <li>RG (Carteira de Identidade)</li>  
-                        <li>CPF (Cadastro de Pessoa Física)</span> 
-                        </li>
-                        <li>Título de eleitor 
-                        </li>
-                        <li>Passaporte brasileiro <span class="doc-obs">(se tiver)</span></li>
-                        <li>Carteira de Identidade Social <span class="doc-obs">(se tiver)</span>
-                        </li>
-                        <li>Identifica&ccedil;&atilde;o Civil nacional (ICN)  <span class="doc-obs">(se tiver)</span> </li>
-                    </ul>
-                </div>
-        </div>
+
+
+
 
     </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">Início</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="profile">1</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="messages">2</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                    href="#list-settings" role="tab" aria-controls="settings">3</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    PASSO A PASSO    
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <h1 class="doc-titulo">Documentos Originais</h1>
+                    <div class="doc-info">
+                        <ul>
+                            <li>
+                                Certid&atilde;o de nascimento (original) ou Certid&atilde;o de casamento
+                                (original)
+                            </li>
+                            <li>
+                                Comprovante de resid&ecirc;ncia (original) (em seu nome ou em
+                                nome dos seus pais ou marido/esposa (se casado no registro
+                                civil)
+                            </li>
+                        </ul>
+                        <span class="doc-obs">Caso só tenha comprovante de residência em nome de outra
+                            pessoa, você também deve levar uma declaração de moradia.
+                            A seguir você poderá ver o modelo de uma.
+                        </span>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <h1 class="doc-titulo">Cópias Necessárias de Documentos</h1>
+                    <div class="doc-info">
+                        <ul>
+                            <li>RG (Carteira de Identidade)</li>
+                            <li>CPF (Cadastro de Pessoa Física)</span>
+                            </li>
+                            <li>Título de eleitor
+                            </li>
+                            <li>Passaporte brasileiro <span class="doc-obs">(se tiver)</span></li>
+                            <li>Carteira de Identidade Social <span class="doc-obs">(se tiver)</span>
+                            </li>
+                            <li>Identifica&ccedil;&atilde;o Civil nacional (ICN) <span class="doc-obs">(se tiver)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <h1 class="doc-titulo">Certidoes Necessarias</h1>
+                        <div class="doc-info">
+                            <ol>
+                                <li>Certidão do distribuidor cível do local de residência dos últimos cinco anos (estadual/federal);
+                                    <ul>
+                                        <li>
+                                                Vá no site ou portal do Tribunal de Justiça do estado em que você
+                                                mora atualmente e procure por certidões e escolha a certidão
+                                                cível;
+                                        </li>
+                                        <li>
+                                                Vá no site da Justiça Federal do estado em que você mora e
+                                                procure por certidões (escolha cível se tiver ou pegue uma certidão
+                                                geral)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> Certidão do distribuidor criminal do local de residência dos últimos cinco anos (estadual/federal);
+                                    <ul>
+                                        <li>
+                                                Vá no site ou portal do Tribunal de Justiça do estado em que você
+                                                mora atualmente e procure por certidões e escolha a certidão
+                                                criminal;
+                                        </li>
+                                        <li>
+                                                Vá no site da Justiça Federal do estado em que você mora e
+                                                procure por certidões (escolha criminal se tiver ou pegue uma
+                                                certidão geral)
+                                        </li>
+                                        <li>
+                                            TODO: ver onde e como vai colocar os links dos locais para retirar as acoes criminais.    
+                                            ESCOLHAM A OPÇÃO (MODELO) /CÍVEL ou AÇÕES CÍVEIS/ e depois
+                                                retirem outra com a opção CRIMINAL ou AÇÕES CRIMINAIS DE SUA
+                                                CIDADE (COMARCA)
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
