@@ -2,7 +2,7 @@
 
 $( document ).ready(function() {
     console.log( "ready!" );
-    $("#"+id+"lista-link-estados ul").hide();
+    $("#estado-selecionadolista-link-estados ul").hide();
     $("#estado-selecionado").on("change",mostrarLinksCertidoesOnChangeEvento);
 });
 
