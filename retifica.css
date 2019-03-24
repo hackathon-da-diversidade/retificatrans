@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800');
+
+
+
+body, html {
+	margin: 0;
+	font-family:Assistant, sans-serif; 
+}
+
+#explicacao{
+	font-weight: 600; 
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+
+.section{
+	display: flex; 
+	flex-direction: column; 
+	justify-content:center;	
+	height: 100vh; 
+}
+
+.jumbotron{ 
+	background-image: url(Fundo-01.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.item{
+	width: 400px; 
+	align-self:center;
+}
+
+button {
+	background-color: black;
+	border: none;
+	font-size: 14px;
+	font-weight: 600; 
+	color: white;
+	text-align: center;
+	padding: 9px 30px;
+	-webkit-box-shadow: 5px 3px 6px -1px #504b4b;
+	-moz-box-shadow: 5px 3px 6px -1px #504b4b;
+	box-shadow: 5px 3px 6px -1px #504b4b;
+	
+}
+.buttons{
+display: flex;
+    justify-content: space-between;
+}
+
+}
