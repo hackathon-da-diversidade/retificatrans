@@ -1,0 +1,43 @@
+html{
+
+}
+.documentos{
+    margin-left: 3.55%;
+    margin-top: 3%;
+}
+.marcador-lateral__item {
+    border-radius: 0%;
+    background-color:#dfe3e1;
+    color: #a1a4a6;
+    border: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+.marcador-lateral__item:hover{
+    color: #a1a4a6;
+    background-color: #dfe3e1;
+
+}
+.marcador-lateral__item.active {
+    color: #5bcff0;
+    border: 1px solid #5bcff0;
+    background-color: transparent;
+}
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+.marcador-lateral{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    
+}
+.test{
+    padding: 0;
+}
