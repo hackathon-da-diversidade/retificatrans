@@ -19,7 +19,7 @@ body, html {
 }
 
 .jumbotron{ 
-	background-image: url(Fundo-01.jpg);
+	background-image: url(../img/fundo.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,15 +76,12 @@ display: flex;
 	margin-right: 10px;
 }
 #depoimentos{
-	background-image: url(fundobolinhas-01.jpg);
+	background-image: url(../img/fundobolinhas-01.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-	justify-content: flex-start; 
-	
-	
-	
+	justify-content: flex-start;
 }
 #depoimentos h1{
     text-align: center;
@@ -105,7 +102,7 @@ display: flex;
 	margin-top:100px;
 	position:relative; 
 }
-.depoimento img{
+.depoimento img {
     width: 200px;
     position: absolute;
     right: 0;
