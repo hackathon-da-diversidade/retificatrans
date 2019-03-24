@@ -84,3 +84,9 @@ h4 {
     font-weight: 600;
     font-size: 18px;
 }
+.link-download{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 700;
+}
