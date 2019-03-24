@@ -1,11 +1,10 @@
 <html>
-
+    
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="documentos.css">
+    <link rel="stylesheet" href="./documentos.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -17,7 +16,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
 
-    <script src="documentos.js"></script>
+    <script src="./documentos.js"></script>
 </head>
 
 <body>
@@ -38,12 +37,14 @@
                     data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">3</a>
                 <a class="list-group-item list-group-item-action marcador-lateral__item" id="list-declaracoes-list"
                     data-toggle="list" href="#list-declaracoes" role="tab" aria-controls="declaracoes">4</a>
+                <a class="list-group-item list-group-item-action marcador-lateral__item" id="list-checklist-list"
+                    data-toggle="list" href="#list-checklist" role="tab" aria-controls="checklist">5</a>
                 <a class="list-group-item list-group-item-action marcador-lateral__item" id="list-cartorio-list"
-                    data-toggle="list" href="#list-cartorio" role="tab" aria-controls="cartorio">5</a>
+                    data-toggle="list" href="#list-cartorio" role="tab" aria-controls="cartorio">6</a>
                 <a class="list-group-item list-group-item-action marcador-lateral__item" id="list-feedback-list"
-                    data-toggle="list" href="#list-feedback" role="tab" aria-controls="feedback">6</a>
+                    data-toggle="list" href="#list-feedback" role="tab" aria-controls="feedback">7</a>
                 <a class="list-group-item list-group-item-action marcador-lateral__item" id="list-modificar-list"
-                    data-toggle="list" href="#list-modificar" role="tab" aria-controls="modificar">7</a>
+                    data-toggle="list" href="#list-modificar" role="tab" aria-controls="modificar">8</a>
 
                 <!--
                     i página inicial 
@@ -88,7 +89,7 @@
                     aria-labelledby="list-profile-list">
                     <h1 class="doc-titulo">DOCUMENTAÇÃO </h1>
                     <div>
-                        <h4>Para dar o primeiro passo é preciso possuir os documentos originais abaixo:</h4>
+                        <p>Para dar o primeiro passo é preciso possuir os documentos originais abaixo:</p>
                         <ul>
                             <li>
                                 Certidão de Nascimento ou Casamento
@@ -117,7 +118,7 @@
                         </ul>
                     </div>
                     <h2 class="doc-titulo">DOCUMENTAÇÃO COMPLEMENTAR</h2>
-                    <h4>Separe também a cópia / Xerox dos seguintes documentos:</h4>
+                    <p>Separe também a cópia / Xerox dos seguintes documentos:</p>
                     <ul>
                         <li>
                             Obrigatórios
@@ -142,51 +143,70 @@
                     aria-labelledby="list-messages-list">
                     <h1 class="doc-titulo">CERTIDÕES</h1>
                     <div class="doc-info">
-                        <h4>Com os documentos originais em mãos, vamos para um passo que demanda muita atenção, devido a
-                            emissão das certidões ser através do Portal de Justiça Federal e Estadual.
-                            No total, serão quatro certidões: duas Estaduais e duas Federais.
-                        </h4>
-                        <h2 class="doc-titulo">ESTADUAL</h2>
+                        <p>Precisamos de NOVE certidões obrigatórias e uma que se aplica apenas para quem já serviu ou serve ao Exército, Marinha ou Aeronáutica. Essas certidões serão emitidas em Portais diferentes. 
+                            Por isso tenha atenção e siga as orientações para a emissão.
+                        </p>
+                        <p>
+                             Selecione o Estado que você mora atualmente
+                        </p>
 
-                        <h2 class="doc-titulo">FEDERAL</h2>
+                        <input id="estado-selecionado" list="estados"
+                        class="col-sm-6 custom-select custom-select-sm">
+                    <datalist id="estados">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </datalist>
+                        <ol> 
+                            <h4>CERTIDÕES ESTADUAIS</h4>
+                                Acesse o Portal, selecione a sua cidade (comarca) e faça a emissão de duas certidões:
+                            
+                                <li>
+                                    Certidão do Distribuidor Cível ou ações Cíveis
+                                </li>
+                                <li>
+                                    Certidão do Distribuidor Criminal ou ações Criminais 
+                                </li>
+                                <br>
+                            <h4>CERTIDÕES FEDERAIS</h4>
+                                Acesse o Portal, selecione a sua cidade (comarca) e faça a emissão de duas certidões:
+
+                                <li>
+                                    Certidão do Distribuidor Cível ou ações Cíveis (ou geral)
+                                </li>
+                                <li>
+                                    Certidão do Distribuidor Criminal ou ações Criminais (ou geral) 
+                                </li>
+        
+                            <br>
 
                         <div class="lista-links">
-                            <input id="estado-selecionado" list="estados"
-                                class="col-sm-6 custom-select custom-select-sm">
-                            <datalist id="estados">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espirito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </datalist>
+                          
                             <div id="estado-selecionadolista-link-estados">
-                                ESCOLHAM A OPÇÃO (MODELO) /CÍVEL ou AÇÕES CÍVEIS/ e depois
-                                retirem outra com a opção CRIMINAL ou AÇÕES CRIMINAIS DE SUA
-                                CIDADE (COMARCA)
-
                                 <ul id="link-AC">
                                     <li>ACRE (AC)</li>
                                     <li>https://esaj.tjac.jus.br/sco/abrirCadastro.do ESTADUAL</p>
@@ -461,29 +481,160 @@
                                 </ul>
                             </div>
                         </div>
+                        
+                        <b>
+                        <p>Até este momento temos quatro certidões: duas Estaduais e duas Federais.</p>
+                        </b>
 
+                        <br>    
+                        <li>Certidão da Justiça Eleitoral
+                                <ul>
+                                    <li>
+                                            Acesse o Portal do Tribunal Superior Eleitoral e selecione Certidão
+                                            de Quitação Eleitoral:
+                                            <br>
+                                            <a href="http://www.tse.jus.br/eleitor/certidoes/certidao-de-quitacao-eleitoral" target="_blank">http://www.tse.jus.br/eleitor/certidoes/certidao-de-quitacao-eleitoral</a>
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            Certidão da Justiça do Trabalho 
+                                <ul>
+                                    <li>
+                                            Acesse o Portal do Tribunal Superior do Trabalho e procure por Certidões:
+                                            <br>
+                                            <a href="http://www.tst.jus.br/certidao" target="_blank">http://www.tst.jus.br/certidao</a>
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            Certidão de Execução Criminal Estadual
+                        </li>
+                        <li>
+                                Certidão de Execução Criminal Federal 
+                                <ul>
+                                    <li>
+                                            Acesse o Portal para emitir essa certidão e caso exista algum problema com ao levá-la ao cartório, retire no fórum da sua cidade, diretamente nas varas criminais ou de execução penal do fórum de sua cidade. 
+                                            <a href="http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas" target="_blank">http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas</a>
+
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                                Certidão da Justiça Militar
+                                <ul>
+                                    <li>
+                                            Está certidão é necessária apenas se você já serviu ou serve ao Exército, Marinha ou Aeronáutica
+                                            <a href="http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas" target="_blank">http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas</a>
+                                    </li>
+                                </ul> 
+                        </li>
+
+                        <li>
+                                Certidão Dos tabelionatos de Protestos
+                                <ul>
+                                    <li>
+                                            Essa certidão vai precisar que você se dirija ao cartório de protesto mais perto de sua casa e peça uma certidão negativa em seu nome, RG e CPF.
+                                    </li>
+                                </ul>
+                                        <ul>Atenção!
+                                            <li>
+                                                    Se sua cidade tem apenas um cartório, será neste cartório.
+                                            </li>
+                                            <li>
+                                                    Se na sua cidade os cartórios possuem site ou possibilidade de
+                                                    pedido por via digital, também pode ser feito dessa forma.
+                                            </li>
+                                        </ul>
+                        </li>
+                        </ol>
                     </div>
                 </div>
 
                 <div class="tab-pane fade conteudo-passo" id="list-settings" role="tabpanel"
                     aria-labelledby="list-settings-list">
-                    <h1 class="doc-titulo">Requerimentos</h1>
+                    <h1 class="doc-titulo">REQUERIMENTO</h1>
                     <div class="doc-info">
-                        ...
+                        <p>
+                            Para facilitar o seu pedido, baixe, preencha e imprima o modelo de requerimento
+                        </p>
+                        <p>
+                            DOC2 - Modelo de Requerimento //TODO: link para baixar o pdf
+                        </p>
                     </div>
                 </div>
 
                 <div class="tab-pane fade conteudo-passo" id="list-declaracoes" role="tabpanel"
                     aria-labelledby="list-declaracoes-list">
-                    <h1 class="doc-titulo">declaracoes</h1>
+                    <h1 class="doc-titulo">DECLARAÇÕES</h1>
                     <div class="doc-info">
-                        ...
+                        <p>
+                                Este procedimento de retificação de nome e gênero, possui custos em alguns cartórios. 
+                                Caso você queira solicitar a isenção do valor, pode apresentar os documentos abaixo junto com o seu pedido: 
+                        </p>
+                        <ul>
+                            <li>
+                                Declaração de Pobreza (DOC3) 
+                                <br>
+                                Baixe o modelo, preencha e imprima
+                            </li>
+                            <li>
+                                Requerimento de isenção (DOC4)
+                                <br>
+                                Baixe o modelo, preencha e imprima
+                            </li>
+                            <li>
+                                Cópia do Cartão do bolsa-família (se tiver)
+                            </li>
+                            <li>
+                                Cadastro no CadÚnico (realizado no CRAS ou CREAS de sua cidade)
+                            </li>
+                        </ul>
+                        <p>
+                            P.S. Não é certo que você conseguirá a isenção!
+                        </p>
                     </div>
                 </div>
 
-                <div class="tab-pane fade conteudo-passo" id="list-cartorio" role="tabpanel"
-                    aria-labelledby="list-cartorio-list">
-                    <h1 class="doc-titulo">cartorio</h1>
+                <div class="tab-pane fade conteudo-passo" id="list-checklist" role="tabpanel" aria-labelledby="list-checklist-list">
+                    <h1 class="doc-titulo">FALTA POUCO!</h1>
+                        <div class="doc-info">
+                            <p>
+                                    Você conseguiu gerar, preencher e imprimir todos os documentos e certidões anteriores? 
+                            </p>
+                            <ul>SIM: Antes de ir ao cartório, confira a listagem de documentos para certificar que não esqueceu de nenhum. 
+                                <li>
+                                        Certidão de Nascimento ou Casamento Original 
+                                </li>
+                                <li>
+                                        Comprovante de Residência Original 
+                                        </li>
+                                  <li>
+                                        Cópia do RG, CPF e Título de eleitor
+                                        Certidão do Distribuidor Cível Estadual
+                                        Certidão do Distribuidor Criminal Federal
+                                        Certidão do Distribuidor Cível Estadual 
+                                        Certidão do Distribuidor Criminal Federal
+                                        Certidão da Justiça Eleitoral
+                                        Certidão da Justiça do Trabalho 
+                                        Certidão de Execução Criminal Estadual
+                                        Certidão de Execução Criminal Federal
+                                        Certidão da Justiça Militar
+                                        Certidão Dos tabelionatos de Protestos
+                               
+                                </li>
+                            </ul>
+                            <p>
+                                    NÃO: volte a etapa anterior e solicite ajuda em casos de dúvida.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade conteudo-passo" id="list-cartorio" role="tabpanel" aria-labelledby="list-cartorio-list">
+                    <h1 class="doc-titulo">AGORA VAI!</h1>
                     <div class="doc-info">
                         ...
                     </div>
