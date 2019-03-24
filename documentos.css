@@ -45,8 +45,9 @@
 h1 {
     color: #d592a2;
     font-size: 24px;
+    margin-left: 5%;
+    margin-bottom: 5%;
     font-weight: 800;
-    margin: 5% 5%;
 }
 h2{
     color: #d592a2;
@@ -63,7 +64,7 @@ ul{
     list-style:none;
 }
 
-ul,fieldset, p {
+ul, p , fieldset{
     border-left: 3px solid #5bcffd;
     padding-left: 20px;
     margin-bottom: 50px;
@@ -89,7 +90,4 @@ h4 {
     padding: 5px 10px;
     font-weight: 700;
     width: fit-content;
-}
-input#estado-selecionado {
-    display: block;
 }
