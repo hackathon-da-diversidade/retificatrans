@@ -146,375 +146,521 @@
                 </div>
 
                 <div class="tab-pane fade conteudo-passo" id="list-messages" role="tabpanel"
-                    aria-labelledby="list-messages-list">
-                    <h1 class="doc-titulo">CERTIDÕES</h1>
-                    <div class="doc-info">
-                        <h4>Com os documentos originais em mãos, vamos para um passo que demanda muita atenção, devido a
-                            emissão das certidões ser através do Portal de Justiça Federal e Estadual.
-                            No total, serão quatro certidões: duas Estaduais e duas Federais.
-                        </h4>
-                        <h2 class="doc-titulo">ESTADUAL</h2>
-
-                        <h2 class="doc-titulo">FEDERAL</h2>
-
-                        <div class="lista-links">
-                            <input id="estado-selecionado" list="estados"
-                                class="col-sm-6 custom-select custom-select-sm">
-                            <datalist id="estados">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espirito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </datalist>
-                            <div id="estado-selecionadolista-link-estados">
-                                ESCOLHAM A OPÇÃO (MODELO) /CÍVEL ou AÇÕES CÍVEIS/ e depois
-                                retirem outra com a opção CRIMINAL ou AÇÕES CRIMINAIS DE SUA
-                                CIDADE (COMARCA)
-
-                                <ul id="link-AC">
-                                    <li>ACRE (AC)</li>
-                                    <li>https://esaj.tjac.jus.br/sco/abrirCadastro.do ESTADUAL</p>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL</p>
-                                </ul>
-                                <ul id="link-AL">
-                                    <li>ALAGOAS (AL)</p>
-                                    <li>https://www2.tjal.jus.br/sco/abrirCadastro.do ESTADUAL</p>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL</li>
-                                </ul>
-                                <ul id="link-AP">
-                                    <li>AMAPÁ (AP)
-                                    </li>
-                                    <li>http://tucujuris.tjap.jus.br/tucujuris/pages/certidao-publica/certidao-publica.html
-                                        ESTADUAL
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
-                                    </li>
-                                </ul>
-                                <ul id="link-AM">
-                                    <li>AMAZONAS (AM)
-                                    </li>
-                                    <li>https://consultasaj.tjam.jus.br/sco/abrirCadastro.do ESTADUAL
-                                    </li>
-                                </ul>
-                                <ul id="link-BA">
-                                    <li>BAHIA (BA)
-                                    </li>
-                                    <li>http://esaj.tjba.jus.br/sco/abrirCadastro.do ESTADUAL
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
-                                    </li>
-
-                                </ul>
-                                <ul id="link-CE">
-                                    <li>CEARÁ (CE)
-                                    </li>
-                                    <li>https://cnc.tjce.jus.br/cnc-web/nova/solicitacao.jsf ESTADUAL
-                                    </li>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
-                                    </li>
-                                </ul>
-                                <ul id="link-DF">
-                                    <li>DISTRITO FEDERAL (DF)
-
-                                    </li>
-                                    <li>https://procart.tjdft.jus.br/sistjinternet/sistj?visaoId=tjdf.sistj.internet.certidao.apresentacao.
-                                        VisaoGerarCertidao ESTADUAL
-
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
-
-                                    </li>
+                aria-labelledby="list-messages-list">
+                <h1 class="doc-titulo">CERTIDÕES</h1>
+                <div class="doc-info">
+                    <p>Precisamos de NOVE certidões obrigatórias e uma que se aplica apenas para quem já serviu ou serve ao Exército, Marinha ou Aeronáutica. Essas certidões serão emitidas em Portais diferentes. 
+                        Por isso tenha atenção e siga as orientações para a emissão.
+                    </p>
+                    <p>
+                         Selecione o Estado que você mora atualmente
+                    </p>
+
+                    <input id="estado-selecionado" list="estados"
+                    class="col-sm-6 custom-select custom-select-sm">
+                <datalist id="estados">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </datalist>
+                    <ol> 
+                        <h4>CERTIDÕES ESTADUAIS</h4>
+                            Acesse o Portal, selecione a sua cidade (comarca) e faça a emissão de duas certidões:
+                        
+                            <li>
+                                Certidão do Distribuidor Cível ou ações Cíveis
+                            </li>
+                            <li>
+                                Certidão do Distribuidor Criminal ou ações Criminais 
+                            </li>
+                            <br>
+                        <h4>CERTIDÕES FEDERAIS</h4>
+                            Acesse o Portal, selecione a sua cidade (comarca) e faça a emissão de duas certidões:
+
+                            <li>
+                                Certidão do Distribuidor Cível ou ações Cíveis (ou geral)
+                            </li>
+                            <li>
+                                Certidão do Distribuidor Criminal ou ações Criminais (ou geral) 
+                            </li>
+    
+                        <br>
+
+                    <div class="lista-links">
+                      
+                        <div id="estado-selecionadolista-link-estados">
+                            <ul id="link-AC">
+                                <li>ACRE (AC)</li>
+                                <li> <a href="https://esaj.tjac.jus.br/sco/abrirCadastro.do" target="_blank">CERTIFICADO ESTADUAL</a></p>
+                                <li> <a href="http://portal.trf1.jus.br/Servicos/Certidao/" target="_blank">CERTIFICADO FEDERAL</a></p>
+                            </ul>
+                            <ul id="link-AL">
+                                <li>ALAGOAS (AL)</p>
+                                <li> <a href="https://www2.tjal.jus.br/sco/abrirCadastro.do" target="_blank">CERTIFICADO ESTADUAL</a></p>
+                                <li> <a href="https://www4.trf5.jus.br/certidoes/" target="_blank">CERTIFICADO FEDERAL</a></p>
+                            </ul>
+                            <ul id="link-AP">
+                                <li>AMAPÁ (AP)</li>
+                                <li> <a href="http://tucujuris.tjap.jus.br/tucujuris/pages/certidao-publica/certidao-publica.html" target="_blank">CERTIFICADO ESTADUAL</a></p>
+                                <li> <a href="http://portal.trf1.jus.br/Servicos/Certidao/" target="_blank">CERTIFICADO FEDERAL</a></p>
+                            </ul>
+                            <ul id="link-AM">
+                                <li>AMAZONAS (AM)
+                                </li>
+                                <li>https://consultasaj.tjam.jus.br/sco/abrirCadastro.do ESTADUAL
+                                </li>
+                            </ul>
+                            <ul id="link-BA">
+                                <li>BAHIA (BA)
+                                </li>
+                                <li>http://esaj.tjba.jus.br/sco/abrirCadastro.do ESTADUAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+
+                            </ul>
+                            <ul id="link-CE">
+                                <li>CEARÁ (CE)
+                                </li>
+                                <li>https://cnc.tjce.jus.br/cnc-web/nova/solicitacao.jsf ESTADUAL
+                                </li>
+                                <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
+                                </li>
+                            </ul>
+                            <ul id="link-DF">
+                                <li>DISTRITO FEDERAL (DF)
 
-                                </ul>
-                                <ul id="link-ES">
-                                    <li>ESPÍRITO SANTO (ES)
+                                </li>
+                                <li>https://procart.tjdft.jus.br/sistjinternet/sistj?visaoId=tjdf.sistj.internet.certidao.apresentacao.
+                                    VisaoGerarCertidao ESTADUAL
 
-                                    </li>
-                                    <li>https://sistemas.tjes.jus.br/certidaonegativa/sistemas/certidao/CERTIDAOPESQUISA.cfm
-                                        ESTADUAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                    <li>http://portal.trf2.jus.br/certidao/ FEDERAL
+                                </li>
 
-                                    </li>
-                                </ul>
-                                <ul id="link-GO">
-                                    <li>GOIÁS (GO)
+                            </ul>
+                            <ul id="link-ES">
+                                <li>ESPÍRITO SANTO (ES)
 
-                                    </li>
-                                    <li>https://projudi.tjgo.jus.br/CertidaoNegativaPositivaPublica?PaginaAtual=1&TipoArea=1&Inter
-                                        essePessoal=&Territorio=&Finalidade= ESTADUAL
+                                </li>
+                                <li>https://sistemas.tjes.jus.br/certidaonegativa/sistemas/certidao/CERTIDAOPESQUISA.cfm
+                                    ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>http://portal.trf2.jus.br/certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-MA">
-                                    <li>Maranhão (MA)
+                                </li>
+                            </ul>
+                            <ul id="link-GO">
+                                <li>GOIÁS (GO)
 
-                                    </li>
-                                    <li>http://jurisconsult.tjma.jus.br/#/certidao-generate-state-certificate-form
-                                        ESTADUAL
+                                </li>
+                                <li>https://projudi.tjgo.jus.br/CertidaoNegativaPositivaPublica?PaginaAtual=1&TipoArea=1&Inter
+                                    essePessoal=&Territorio=&Finalidade= ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-MT">
-                                    <li>Mato Grosso (MT)
+                                </li>
+                            </ul>
+                            <ul id="link-MA">
+                                <li>Maranhão (MA)
 
-                                    </li>
-                                    <li>http://sec.tjmt.jus.br/emitir-certidao-de-primeiro-grau?opcaoCertidao=1 ESTADUAL
+                                </li>
+                                <li>http://jurisconsult.tjma.jus.br/#/certidao-generate-state-certificate-form
+                                    ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-MS">
-                                    <li>Mato Grosso do Sul (MS)
+                                </li>
+                            </ul>
+                            <ul id="link-MT">
+                                <li>Mato Grosso (MT)
 
-                                    </li>
-                                    <li>https://esaj.tjms.jus.br/sco/abrirCadastro.do ESTADUAL
+                                </li>
+                                <li>http://sec.tjmt.jus.br/emitir-certidao-de-primeiro-grau?opcaoCertidao=1 ESTADUAL
 
-                                    </li>
-                                    <li>http://web.trf3.jus.br/certidao/certidao FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-MG">
-                                    <li>Minas Gerais (MG)
+                                </li>
+                            </ul>
+                            <ul id="link-MS">
+                                <li>Mato Grosso do Sul (MS)
 
-                                    </li>
-                                    <li>https://rupe.tjmg.jus.br/rupe/justica/publico/certidoes/criarSolicitacaoCertidao.rupe?solicit
-                                        acaoPublica=true ESTADUAL
+                                </li>
+                                <li>https://esaj.tjms.jus.br/sco/abrirCadastro.do ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>http://web.trf3.jus.br/certidao/certidao FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-PB">
-                                    <li>Paraíba (PB)
+                                </li>
+                            </ul>
+                            <ul id="link-MG">
+                                <li>Minas Gerais (MG)
 
-                                    </li>
-                                    <li>https://app.tjpb.jus.br/certo/paginas/publico/solicitarCertidao.jsf ESTADUAL
+                                </li>
+                                <li>https://rupe.tjmg.jus.br/rupe/justica/publico/certidoes/criarSolicitacaoCertidao.rupe?solicit
+                                    acaoPublica=true ESTADUAL
 
-                                    </li>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-PR">
-                                    <li>Paraná (PR)
+                                </li>
+                            </ul>
+                            <ul id="link-PB">
+                                <li>Paraíba (PB)
 
-                                    </li>
-                                    <li>https://portal.tjpr.jus.br/portletforms/publico/frm.do?idFormulario=2922
-                                        ESTADUAL
+                                </li>
+                                <li>https://app.tjpb.jus.br/certo/paginas/publico/solicitarCertidao.jsf ESTADUAL
 
-                                    </li>
-                                    <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
+                                </li>
+                                <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-PE">
-                                    <li>Pernambuco (PE)
+                                </li>
+                            </ul>
+                            <ul id="link-PR">
+                                <li>Paraná (PR)
 
-                                    </li>
-                                    <li>https://www.tjpe.jus.br/certidaopje/xhtml/main.xhtml ESTADUAL
+                                </li>
+                                <li>https://portal.tjpr.jus.br/portletforms/publico/frm.do?idFormulario=2922
+                                    ESTADUAL
 
-                                    </li>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
+                                </li>
+                                <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-PI">
-                                    <li>Piauí (PI)
+                                </li>
+                            </ul>
+                            <ul id="link-PE">
+                                <li>Pernambuco (PE)
 
-                                    </li>
-                                    <li>http://www.tjpi.jus.br/themisconsulta/certidao ESTADUAL
+                                </li>
+                                <li>https://www.tjpe.jus.br/certidaopje/xhtml/main.xhtml ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-RJ">
-                                    <li>Rio de Janeiro (RJ)
+                                </li>
+                            </ul>
+                            <ul id="link-PI">
+                                <li>Piauí (PI)
 
-                                    </li>
-                                    <li>http://www4.tjrj.jus.br/Portal-Extrajudicial/certidao/judicial/solicitar
-                                        ESTADUAL
+                                </li>
+                                <li>http://www.tjpi.jus.br/themisconsulta/certidao ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf2.jus.br/certidao/ FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-RN">
-                                    <li>Rio Grande do Norte (RN)
+                                </li>
+                            </ul>
+                            <ul id="link-RJ">
+                                <li>Rio de Janeiro (RJ)
 
-                                    </li>
-                                    <li>http://esaj.tjrn.jus.br/sco/abrirCadastro.do ESTADUAL
+                                </li>
+                                <li>http://www4.tjrj.jus.br/Portal-Extrajudicial/certidao/judicial/solicitar
+                                    ESTADUAL
 
-                                    </li>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
+                                </li>
+                                <li>http://portal.trf2.jus.br/certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-RS">
-                                    <li>Rio Grande do Sul (RS)
+                                </li>
+                            </ul>
+                            <ul id="link-RN">
+                                <li>Rio Grande do Norte (RN)
 
-                                    </li>
-                                    <li>http://www.tjrs.jus.br/site/servicos/alvara_de_folha_corrida_cert2g/ ESTADUAL
+                                </li>
+                                <li>http://esaj.tjrn.jus.br/sco/abrirCadastro.do ESTADUAL
 
-                                    </li>
-                                    <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
+                                </li>
+                                <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-RO">
-                                    <li>Rondônia (RO)
+                                </li>
+                            </ul>
+                            <ul id="link-RS">
+                                <li>Rio Grande do Sul (RS)
 
-                                    </li>
-                                    <li>https://webapp.tjro.jus.br/certidaoonline/pages/cnpg.xhtml ESTADUAL
+                                </li>
+                                <li>http://www.tjrs.jus.br/site/servicos/alvara_de_folha_corrida_cert2g/ ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-RR">
-                                    <li>Roraima (RR)
+                                </li>
+                            </ul>
+                            <ul id="link-RO">
+                                <li>Rondônia (RO)
 
-                                    </li>
-                                    <li>http://www.tjrr.jus.br/index.php/servicos/certidao-negativa ESTADUAL
+                                </li>
+                                <li>https://webapp.tjro.jus.br/certidaoonline/pages/cnpg.xhtml ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-SC">
-                                    <li>Santa Catarina (SC)
+                                </li>
+                            </ul>
+                            <ul id="link-RR">
+                                <li>Roraima (RR)
 
-                                    </li>
-                                    <li>https://esaj.tjsc.jus.br/esaj/portal.do?servico=810000 ESTADUAL
+                                </li>
+                                <li>http://www.tjrr.jus.br/index.php/servicos/certidao-negativa ESTADUAL
 
-                                    </li>
-                                    <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-SP">
-                                    <li>São Paulo (SP)
+                                </li>
+                            </ul>
+                            <ul id="link-SC">
+                                <li>Santa Catarina (SC)
 
-                                    </li>
-                                    <li>https://esaj.tjsp.jus.br/sco/abrirCadastro.do ESTADUAL
+                                </li>
+                                <li>https://esaj.tjsc.jus.br/esaj/portal.do?servico=810000 ESTADUAL
 
-                                    </li>
-                                    <li>http://web.trf3.jus.br/certidao/certidao FEDERAL
+                                </li>
+                                <li>https://www2.trf4.jus.br/trf4/processos/certidao/index.php FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-SE">
-                                    <li>Sergipe (SE)
+                                </li>
+                            </ul>
+                            <ul id="link-SP">
+                                <li>São Paulo (SP)
 
-                                    </li>
-                                    <li>http://www.tjse.jus.br/portal/servicos/judiciais/certidao-online/solicitacao-de-certidao-
-                                        negativa ESTADUAL
+                                </li>
+                                <li>https://esaj.tjsp.jus.br/sco/abrirCadastro.do ESTADUAL
 
-                                    </li>
-                                    <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
+                                </li>
+                                <li>http://web.trf3.jus.br/certidao/certidao FEDERAL
 
-                                    </li>
-                                </ul>
-                                <ul id="link-TO">
-                                    <li>Tocantins (TO)
+                                </li>
+                            </ul>
+                            <ul id="link-SE">
+                                <li>Sergipe (SE)
 
-                                    </li>
-                                    <li>https://eproc1.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=cj_online&a
-                                        cao_origem=&acao_retorno=cj ESTADUAL
+                                </li>
+                                <li>http://www.tjse.jus.br/portal/servicos/judiciais/certidao-online/solicitacao-de-certidao-
+                                    negativa ESTADUAL
 
-                                    </li>
-                                    <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+                                </li>
+                                <li>https://www4.trf5.jus.br/certidoes/ FEDERAL
 
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                            </ul>
+                            <ul id="link-TO">
+                                <li>Tocantins (TO)
+
+                                </li>
+                                <li>https://eproc1.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=cj_online&a
+                                    cao_origem=&acao_retorno=cj ESTADUAL
+
+                                </li>
+                                <li>http://portal.trf1.jus.br/Servicos/Certidao/ FEDERAL
+
+                                </li>
+                            </ul>
                         </div>
-
                     </div>
-                </div>
+                    
+                    <b>
+                    <p>Até este momento temos quatro certidões: duas Estaduais e duas Federais.</p>
+                    </b>
 
-                <div class="tab-pane fade conteudo-passo" id="list-settings" role="tabpanel"
-                    aria-labelledby="list-settings-list">
-                    <h1 class="doc-titulo">Requerimentos</h1>
-                    <div class="doc-info">
-                        ...
-                    </div>
-                </div>
+                    <br>    
+                    <li>Certidão da Justiça Eleitoral
+                            <ul>
+                                <li>
+                                        Acesse o Portal do Tribunal Superior Eleitoral e selecione Certidão
+                                        de Quitação Eleitoral:
+                                        <br>
+                                        <a href="http://www.tse.jus.br/eleitor/certidoes/certidao-de-quitacao-eleitoral" target="_blank">http://www.tse.jus.br/eleitor/certidoes/certidao-de-quitacao-eleitoral</a>
+                                </li>
+                            </ul>
+                    </li>
 
-                <div class="tab-pane fade conteudo-passo" id="list-declaracoes" role="tabpanel"
-                    aria-labelledby="list-declaracoes-list">
-                    <h1 class="doc-titulo">declaracoes</h1>
-                    <div class="doc-info">
-                        ...
-                    </div>
-                </div>
+                    <li>
+                        Certidão da Justiça do Trabalho 
+                            <ul>
+                                <li>
+                                        Acesse o Portal do Tribunal Superior do Trabalho e procure por Certidões:
+                                        <br>
+                                        <a href="http://www.tst.jus.br/certidao" target="_blank">http://www.tst.jus.br/certidao</a>
+                                </li>
+                            </ul>
+                    </li>
 
-                <div class="tab-pane fade conteudo-passo" id="list-cartorio" role="tabpanel"
-                    aria-labelledby="list-cartorio-list">
-                    <h1 class="doc-titulo">cartorio</h1>
-                    <div class="doc-info">
-                        ...
-                    </div>
-                </div>
+                    <li>
+                        Certidão de Execução Criminal Estadual
+                    </li>
+                    <li>
+                            Certidão de Execução Criminal Federal 
+                            <ul>
+                                <li>
+                                        Acesse o Portal para emitir essa certidão e caso exista algum problema com ao levá-la ao cartório, retire no fórum da sua cidade, diretamente nas varas criminais ou de execução penal do fórum de sua cidade. 
+                                        <a href="http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas" target="_blank">http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas</a>
 
-                <div class="tab-pane fade conteudo-passo" id="list-feedback" role="tabpanel"
-                    aria-labelledby="list-feedback-list">
-                    <h1 class="doc-titulo">feedback</h1>
-                    <div class="doc-info">
-                        ...
-                    </div>
-                </div>
+                                </li>
+                            </ul>
+                    </li>
 
-                <div class="tab-pane fade conteudo-passo" id="list-modificar" role="tabpanel"
-                    aria-labelledby="list-modificar-list">
-                    <h1 class="doc-titulo">modificar</h1>
-                    <div class="doc-info">
-                        ...
-                    </div>
-                </div>
+                    <li>
+                            Certidão da Justiça Militar
+                            <ul>
+                                <li>
+                                        Está certidão é necessária apenas se você já serviu ou serve ao Exército, Marinha ou Aeronáutica
+                                        <a href="http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas" target="_blank">http://www.pf.gov.br/servicos-pf/armas/normativos/certidoes-criminais-negativas</a>
+                                </li>
+                            </ul> 
+                    </li>
 
+                    <li>
+                            Certidão Dos tabelionatos de Protestos
+                            <ul>
+                                <li>
+                                        Essa certidão vai precisar que você se dirija ao cartório de protesto mais perto de sua casa e peça uma certidão negativa em seu nome, RG e CPF.
+                                </li>
+                            </ul>
+                                    <ul>Atenção!
+                                        <li>
+                                                Se sua cidade tem apenas um cartório, será neste cartório.
+                                        </li>
+                                        <li>
+                                                Se na sua cidade os cartórios possuem site ou possibilidade de
+                                                pedido por via digital, também pode ser feito dessa forma.
+                                        </li>
+                                    </ul>
+                    </li>
+                    </ol>
+                </div>
             </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-settings" role="tabpanel"
+                aria-labelledby="list-settings-list">
+                <h1 class="doc-titulo">REQUERIMENTO</h1>
+                <div class="doc-info">
+                    <p>
+                        Para facilitar o seu pedido, baixe, preencha e imprima o modelo de requerimento
+                    </p>
+                    <p>
+                        DOC2 - Modelo de Requerimento //TODO: link para baixar o pdf
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-declaracoes" role="tabpanel"
+                aria-labelledby="list-declaracoes-list">
+                <h1 class="doc-titulo">DECLARAÇÕES</h1>
+                <div class="doc-info">
+                    <p>
+                            Este procedimento de retificação de nome e gênero, possui custos em alguns cartórios. 
+                            Caso você queira solicitar a isenção do valor, pode apresentar os documentos abaixo junto com o seu pedido: 
+                    </p>
+                    <ul>
+                        <li>
+                            Declaração de Pobreza (DOC3) 
+                            <br>
+                            Baixe o modelo, preencha e imprima
+                        </li>
+                        <li>
+                            Requerimento de isenção (DOC4)
+                            <br>
+                            Baixe o modelo, preencha e imprima
+                        </li>
+                        <li>
+                            Cópia do Cartão do bolsa-família (se tiver)
+                        </li>
+                        <li>
+                            Cadastro no CadÚnico (realizado no CRAS ou CREAS de sua cidade)
+                        </li>
+                    </ul>
+                    <p>
+                        P.S. Não é certo que você conseguirá a isenção!
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-checklist" role="tabpanel" aria-labelledby="list-checklist-list">
+                <h1 class="doc-titulo">FALTA POUCO!</h1>
+                    <div class="doc-info">
+                        <p>
+                                Você conseguiu gerar, preencher e imprimir todos os documentos e certidões anteriores? 
+                        </p>
+                        <ul>SIM: Antes de ir ao cartório, confira a listagem de documentos para certificar que não esqueceu de nenhum. 
+                            <li>
+                                    Certidão de Nascimento ou Casamento Original 
+                            </li>
+                            <li>
+                                    Comprovante de Residência Original 
+                                    </li>
+                              <li>
+                                    Cópia do RG, CPF e Título de eleitor
+                                    Certidão do Distribuidor Cível Estadual
+                                    Certidão do Distribuidor Criminal Federal
+                                    Certidão do Distribuidor Cível Estadual 
+                                    Certidão do Distribuidor Criminal Federal
+                                    Certidão da Justiça Eleitoral
+                                    Certidão da Justiça do Trabalho 
+                                    Certidão de Execução Criminal Estadual
+                                    Certidão de Execução Criminal Federal
+                                    Certidão da Justiça Militar
+                                    Certidão Dos tabelionatos de Protestos
+                           
+                            </li>
+                        </ul>
+                        <p>
+                                NÃO: volte a etapa anterior e solicite ajuda em casos de dúvida.
+                        </p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-cartorio" role="tabpanel" aria-labelledby="list-cartorio-list">
+                <h1 class="doc-titulo">AGORA VAI!</h1>
+                <div class="doc-info">
+                    ...
+                </div>
+            </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-feedback" role="tabpanel"
+                aria-labelledby="list-feedback-list">
+                <h1 class="doc-titulo">feedback</h1>
+                <div class="doc-info">
+                    ...
+                </div>
+            </div>
+
+            <div class="tab-pane fade conteudo-passo" id="list-modificar" role="tabpanel"
+                aria-labelledby="list-modificar-list">
+                <h1 class="doc-titulo">modificar</h1>
+                <div class="doc-info">
+                    ...
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
 
 </body>
 
