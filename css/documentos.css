@@ -93,3 +93,8 @@ h4 {
 input#estado-selecionado {
     display: block;
 }
+.importante {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 10%;
+}
