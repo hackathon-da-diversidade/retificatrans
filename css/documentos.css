@@ -106,5 +106,14 @@ input#estado-selecionado {
     font-size: 40px;
     border: 2px solid;
     line-height: 40px;
-    background-image: url("img/passoapasso-01.png");
+}
+
+#estado-selecionadolista-link-estados li:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link-download a {
+    text-decoration: none;
+    color: white;
 }
