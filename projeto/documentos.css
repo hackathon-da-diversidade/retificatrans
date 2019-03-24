@@ -29,6 +29,11 @@ html{
     border: 1px solid #5bcff0;
     background-color: transparent;
 }
+
+.marcador-lateral__item:first-child.active {
+    background-image: url(bota lig-01.png);
+}
+
 .list-group-item:first-child, .list-group-item:last-child {
     border-radius: 0;
 }
