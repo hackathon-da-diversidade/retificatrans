@@ -112,3 +112,8 @@ input#estado-selecionado {
     font-size: 20px;
     font-weight: 600;
 }
+
+.link-download a {
+    text-decoration: none;
+    color: white;
+}
