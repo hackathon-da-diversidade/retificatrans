@@ -34,6 +34,7 @@
 }
 .marcador-lateral{
     width: fit-content;
+    width: -webkit-fit-content;
     margin: 0;
     padding: 0;
     
@@ -89,6 +90,7 @@ h4 {
     padding: 5px 10px;
     font-weight: 700;
     width: fit-content;
+    width: -webkit-fit-content;
 }
 input#estado-selecionado {
     display: block;
@@ -97,4 +99,12 @@ input#estado-selecionado {
     font-size: 18px;
     font-weight: bolder;
     margin-left: 10%;
+}
+
+.marcador-lateral__item:first-child {
+    border-radius: 100%;
+    font-size: 40px;
+    border: 2px solid;
+    line-height: 40px;
+    background-image: url("img/passoapasso-01.png");
 }
