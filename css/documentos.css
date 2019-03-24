@@ -98,3 +98,11 @@ input#estado-selecionado {
     font-weight: bolder;
     margin-left: 10%;
 }
+
+.marcador-lateral__item:first-child {
+    border-radius: 100%;
+    font-size: 40px;
+    border: 2px solid;
+    line-height: 40px;
+    background-image: url("img/passoapasso-01.png");
+}
