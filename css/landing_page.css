@@ -142,3 +142,12 @@ top: -20
 	font-size: 16px;
 	font-weight: 600;
 }
+
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	background-color: white;
+	text-align: center;
+  }

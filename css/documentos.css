@@ -117,3 +117,27 @@ input#estado-selecionado {
     text-decoration: none;
     color: white;
 }
+
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	background-color: white;
+	text-align: center;
+  }
+
+  button, i {
+	background-color: black;
+	border: none;
+	font-size: 14px;
+	font-weight: 600; 
+	color: white;
+	text-align: center;
+	padding: 9px 30px;
+	-webkit-box-shadow: 5px 3px 6px -1px #504b4b;
+	-moz-box-shadow: 5px 3px 6px -1px #504b4b;
+	box-shadow: 5px 3px 6px -1px #504b4b;
+	
+}
+
